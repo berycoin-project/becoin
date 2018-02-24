@@ -1,12 +1,12 @@
 {
-  "name": "lcoin",
+  "name": "becoin",
   "version": "1.0.0-beta.15",
-  "description": "Litecoin bike-shed",
+  "description": "Berycoin bike-shed",
   "license": "MIT",
-  "repository": "git://github.com/bcoin-org/lcoin.git",
-  "homepage": "https://github.com/bcoin-org/lcoin",
+  "repository": "git://github.com/berycoin-project/becoin.git",
+  "homepage": "https://github.com/berycoin-project/becoin",
   "bugs": {
-    "url": "https://github.com/bcoin-org/lcoin/issues"
+    "url": "https://github.com/berycoin-project/becoin/issues"
   },
   "author": "Fedor Indutny <fedor@indutny.com>",
   "contributors": [
@@ -51,10 +51,10 @@
   },
   "main": "./lib/bcoin.js",
   "bin": {
-    "lcoin-node": "./bin/node",
-    "lcoin-spvnode": "./bin/spvnode",
-    "lcoin-cli": "./bin/cli",
-    "lcoin": "./bin/lcoin"
+    "becoin-node": "./bin/node",
+    "becoin-spvnode": "./bin/spvnode",
+    "becoin-cli": "./bin/cli",
+    "becoin": "./bin/becoin"
   },
   "scripts": {
     "test": "mocha --reporter spec test/*-test.js",

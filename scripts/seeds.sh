@@ -1,7 +1,7 @@
 #!/bin/bash
 
 dir=$(dirname "$(which "$0")")
-url_main='https://raw.githubusercontent.com/litecoin-project/litecoin/master/contrib/seeds/nodes_main.txt'
+url_main='https://raw.githubusercontent.com/berycoin-project/berycoin/master/contrib/seeds/nodes_main.txt'
 
 getseeds() {
   echo "$(curl -s "$1")"

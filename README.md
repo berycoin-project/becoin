@@ -1,6 +1,6 @@
-# Lcoin (Bcoin ported to Litecoin)
+# Becoin (Bcoin ported to Litecoin)
 
-**Lcoin** is an alternative implementation of the litecoin protocol, written in
+**Becoin** is an alternative implementation of the berycoin protocol, written in
 node.js.
 
 ## Uses
@@ -17,10 +17,10 @@ Try it in the browser: http://bcoin.io/browser.html
 ## Install
 
 ```
-$ git clone git://github.com/bcoin-org/lcoin.git
-$ cd lcoin
+$ git clone git://github.com/berycoin-project/becoin.git
+$ cd becoin
 $ npm install
-$ ./bin/lcoin
+$ ./bin/becoin
 ```
 
 See the [Beginner's Guide][guide] for more in-depth installation instructions.
@@ -37,7 +37,7 @@ Join us on [freenode][freenode] in the [#bcoin][irc] channel.
 
 ## Disclaimer
 
-Lcoin does not guarantee you against theft or lost funds due to bugs, mishaps,
+Becoin does not guarantee you against theft or lost funds due to bugs, mishaps,
 or your own incompetence. You and you alone are responsible for securing your
 money.
 
