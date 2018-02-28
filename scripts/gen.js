@@ -58,9 +58,9 @@ function createGenesisBlock(options) {
   });
 
   tx.inputs[0].script = Script.fromRaw(Buffer.from(
-    '04ffff001d0104404e592054696d65732030352f4f63742f323031312053746576'
-    + '65204a6f62732c204170706c65e280997320566973696f6e6172792c20446965'
-    + '73206174203536', 'hex'));
+    '04ffff001d0104475472756d70e280997320746f7567682074616c6b206d61792068656'
+    + 'c702050616b697374616e206b65657020746f702074616c656e742046656272756172'
+    + '7920352c2032303138', 'hex'));
 
   block = new Block({
     version: options.version,
@@ -79,42 +79,42 @@ function createGenesisBlock(options) {
 
 main = createGenesisBlock({
   version: 1,
-  ts: 1317972665,
-  bits: 504365040,
-  nonce: 2084524493,
+  ts: 1518374156,
+  bits: 504364288,
+  nonce: 722266,
   flags: new Buffer(
-    'NY Times 05/Oct/2011 Steve Jobs, Apple’s Visionary, Dies at 56',
+    'Trump’s tough talk may help Pakistan keep top talent February 5, 2018',
     'ascii'),
   script: Script.fromArray([
-    new Buffer('040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9', 'hex'),
+    new Buffer('0482fae82061c1400ca141ccb3831ee91bbb054495b75bd13a44c83e6bdff949eb69c76cce3d8957328cec83513f3a1f40d15b4f8a0dcbdd14555bdd3fe45649b4', 'hex'),
     opcodes.OP_CHECKSIG
   ])
 });
 
 testnet = createGenesisBlock({
-  ts: 1486949366,
-  nonce: 293345,
-  bits: 0x1e0ffff0,
+  ts: 1518375437,
+  nonce: 3738177,
+  bits: 0x1e0aff00,
   version: 1,
   flags: new Buffer(
-    'NY Times 05/Oct/2011 Steve Jobs, Apple’s Visionary, Dies at 56',
+    'Trump’s tough talk may help Pakistan keep top talent February 5, 2018',
     'ascii'),
   script: Script.fromArray([
-    new Buffer('040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9', 'hex'),
+    new Buffer('0482fae82061c1400ca141ccb3831ee91bbb054495b75bd13a44c83e6bdff949eb69c76cce3d8957328cec83513f3a1f40d15b4f8a0dcbdd14555bdd3fe45649b4', 'hex'),
     opcodes.OP_CHECKSIG
   ])
 });
 
 regtest = createGenesisBlock({
-  ts: 1296688602,
-  nonce: 0,
-  bits: 0x207fffff,
+  ts: 1518377271,
+  nonce: 328258,
+  bits: 0x1e0a1f44,
   version: 1,
   flags: new Buffer(
-    'NY Times 05/Oct/2011 Steve Jobs, Apple’s Visionary, Dies at 56',
+    'Trump’s tough talk may help Pakistan keep top talent February 5, 2018',
     'ascii'),
   script: Script.fromArray([
-    new Buffer('040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9', 'hex'),
+    new Buffer('0482fae82061c1400ca141ccb3831ee91bbb054495b75bd13a44c83e6bdff949eb69c76cce3d8957328cec83513f3a1f40d15b4f8a0dcbdd14555bdd3fe45649b4', 'hex'),
     opcodes.OP_CHECKSIG
   ])
 });
